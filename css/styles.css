@@ -23,11 +23,28 @@ p {
   margin: 0;
 }
 
+/* Mobile screen */
 .container {
-  max-width: 1158px;
-  padding: 0 15px;
+  max-width: 320px;
+  padding: 0 16px;
   margin: 0 auto;
 }
+
+/* Tablet screen */
+@media screen and (min-width: 768px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* Desktop screen */
+@media screen and (min-width: 1158px) {
+  .container {
+    max-width: 1158px;
+    padding: 0 15px;
+  }
+}
+
 .section {
   padding-top: 120px;
   padding-bottom: 120px;
@@ -710,3 +727,7 @@ img {
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 /* #endregion */
+
+.hide {
+  display: none;
+}
